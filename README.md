@@ -47,6 +47,10 @@ Sorting is a technique of arranging and rearranging a collection of items to som
 
 Bubble sort is the simplest sorting algorithm. It gets its name from the way larger values in  an array “bubble up”  end as the numbers are sorted. 
 
+<p align="center">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Bubble-sort.gif"> 
+</p>
+
 <b> Bubble Sort Procedure: </b>
 <i>
 * Compares the first 2 elements in the array, it swaps the numbers if they are out of order and repeats this process  for each adjacent elements to the end of the array. It then starts back at the first 2 elements in the array until no swaps occur in the last pass [4]
@@ -68,6 +72,10 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
 ### Insertion Sort:
 
 Insertion sort is a comparison based sorting algorithm which is  faster than its counterparts (bubble sort and selection sort). An analogy is often made to the method used by card players to sort cards in their hands. 
+
+<p align="center">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Insertion-sort-example.gif"> 
+</p>
 
 <b> Insertion Sort Procedure: </b>
 
@@ -99,6 +107,10 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 
 Quicksort is a divide and conquer algorithm which is comparable to merge sort. Although it is slightly more complicated, it is usually significantly faster than merge sort and does not require the use of additional memory.
 
+<p align="center">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif"> 
+</p>
+
 <i>
 <b> Quicksort Procedure has 3 basic steps:</b>
 
@@ -123,6 +135,10 @@ Quicksort is a divide and conquer algorithm which is comparable to merge sort. A
 ### Merge Sort:
 
 Quicksort is a divide and conquer recursive algorithm. 
+
+<p align="center">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif"> 
+</p>
 
 <i>
 * If only one element is in the array it is already sorted and return
@@ -149,6 +165,11 @@ A number of assumptions are made about the type of input:
 
   * Assume each of the n input elements has a positive integer key with a range of 0 to  k (if you are using zero indexing keys are in the range [0,….., k-1]).  n refers to the number of elements and k refers to the highest value element. 
 [6]
+
+<p align="center">
+   <img src="https://camo.githubusercontent.com/02f9a6cfab70c3bdc81dda16112638071b688710/68747470733a2f2f312e62702e626c6f6773706f742e636f6d2f2d785071796c6e67714153592f574c47713370396e3976492f414141414141414141484d2f4a48647458416b4a593877597a444d4258787161726a6d687050684d3075384d41434c63422f73313630302f526573756c74417272617943532e676966"> 
+</p>
+
 1. Establish the key range  k in the input array (if currently unknown)
 2. Initialise an array count of size k ,which will be used to count the number of times that each key value appears in the input instance.
 3. Initialise an array result of size n, which will be used to store the sorted output.
