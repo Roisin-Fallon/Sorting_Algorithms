@@ -331,9 +331,12 @@ Space complexity <i> O(n +k) </i>
 <a name="imp"></a>
 ## Implementation and Benchmarking:
 
+<a name="con"></a>
+## Conclusion:
+![Algorithm Sorting Property Summary](https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/summary.png)
 
-
-References:
+<a name="bib"></a>
+## Bibliography:
 1. A brief history of algorithms (and why it's so important in automation, machine learning, and everyday life). [ONLINE] Available at: https://e27.co/brief-history-algorithms-important-automation-machine-learning-everyday-life-20161207/. [Accessed 18 April 2019].
 2. P.Mannion (2019) Week 10: Sorting Algorithms Part 2, Galway-Mayo Institute of Technology
 3. Karuna Sehgal. 2019. An Introduction to Bubble Sort – Karuna Sehgal – Medium. [ONLINE] Available at: https://medium.com/karuna-sehgal/an-introduction-to-bubble-sort-d85273acfcd8. [Accessed 2 May 2019].
