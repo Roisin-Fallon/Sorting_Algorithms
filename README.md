@@ -334,6 +334,9 @@ Space complexity <i> O(n +k) </i>
 <a name="con"></a>
 ## Conclusion:
 ![Algorithm Sorting Property Summary](https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/summary.png)
+<p align="center">
+   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ark_FZG1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1omv0tmikzeaj24z8ps2.jpeg"> 
+</p>
 
 <a name="bib"></a>
 ## Bibliography:
