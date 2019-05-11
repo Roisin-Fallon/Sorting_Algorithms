@@ -6,7 +6,9 @@
 1. [ Introduction ](#intro)
     * [Concept of Sorting](#c)
     * [Relevance of sorting algorithm to the modern world](#r)
-    * [History of algorithms ](#his)
+    * [ Sorting Algorithm Timeline](#his)
+    * [Space Complexity](#sp)
+    * [Time Complexity](#time)
 2. [Simple Comparative Sorting Algorithms]
     * [Bubble Sort](#bub)
     * [Insertion Sort](#in)
@@ -37,11 +39,55 @@ Sorting is a technique of arranging and rearranging a collection of items to som
 
 
 <a name="his"></a>
-### History of algorithms 
+### Sorting Algorithm Timeline:
+
  <p align="center">
    <img src="              " title="Sorting Algorithm timeline" > 
  </p>
  
+ <a name="sp"></a>
+### Space Complexity:
+ 
+ <a name="time"></a>
+### Time Complexity:
+ 
+ To analysis the time complexity of an algorithm, the number of operations and arithmetic operations are determined. Time complexity of an algorithm represents the amount of time required by the program to run until completion and is the most popular metric for calculating time complexity is Big O notation. Time complexity is measured in terms of the number of operations an algorithm uses.
+
+<b> Asymptotic Notations </b>
+
+Asymptotic Notations are languages that allow us to analyze an algorithm’s running time by identifying its behavior as the input size for the algorithm increases. This is also known as an algorithm’s growth rate. [9]
+
+The 3 asymptotic notations that will be discussed in terms of time complexity:
+
+<b> Big Oh (O) – Upper Bound </b> 
+
+Big O represents the maximum amount of resources in terms of space and time that an algorithm would require to run. It provides an upper bound on the number of operations an algorithm uses to solve a problem with input of a particular size. Describes the complexity of an algorithm in the worst case. It tells us that a function grows slower or at least as slow as another. 
+
+<b> Big Omega (Ω) – Lower Bound </b>
+
+Omega represents the minimum amount of resources in terms of space and time that an algorithm would require to run. It describes the complexity of an algorithm in the best case.  It tells us that a function grows at least as fast as another. 
+
+<b> Big Theta (Θ)- Average Bound </b>
+
+Theta represents the functions that lie in both O  and Ω expression. It describes the complexity of an algorithm in the average case. It is usually much more difficult to determine the average case time complexity of an algorithm. It represents the average number of operations an algorithm uses to solve a problem over all inputs of a particular size [14].
+[13]
+
+There is a strong correlation between run time of a sorting algorithm and the number of inversions in the input array, where the inversion number relates to one measure of how far it is from being sorted. [11]
+
+The different sorting algorithms are a perfect showcase of how algorithm design can have such a strong effect on program complexity, speed, and efficiency [10].
+
+<b> There are 4 desirable properties for a sorting algorithm: </b>
+
+1. Stable sorting algorithms retains the relative order of elements with equal keys. (Image 1). Using an unstable sorting algorithm changes the relative order of elements with equal keys (Image 2). [12]
+
+Stable Sort              |  Unstable sort
+:-------------------------:|:-------------------------:
+![Stable Sort](https://www.tutorialspoint.com/data_structures_algorithms/images/stable_sort.jpg) |![Unstable Sort](https://www.tutorialspoint.com/data_structures_algorithms/images/unstable_sort.jpg)
+
+2. In-place sorting (Internal sorting): uses only a fixed additional amount of working space, independent of the input size. Algorithms within this category: Selection Sort, Insertion Sort, Bubble Sort, Quick Sort. Not-in place (External Sorting): algorithms that require additional working memory, the amount of which is often related to the input size. Algorithms within this category: Merge Sort. This is a desirable property if you are concerned about the availability of space.
+3. Run time efficiency (Best, Average and Worst case)
+4. Suitability – properties of sorting algorithm are well matched to the class of input instances which are expected (determine the advantages and disadvantages of each algorithm when choosing them). 
+
  
 <a name="bub"></a>
 ### Bubble Sort:
@@ -341,10 +387,16 @@ Space complexity <i> O(n +k) </i>
 <a name="bib"></a>
 ## Bibliography:
 1. A brief history of algorithms (and why it's so important in automation, machine learning, and everyday life). [ONLINE] Available at: https://e27.co/brief-history-algorithms-important-automation-machine-learning-everyday-life-20161207/. [Accessed 18 April 2019].
-2. P.Mannion (2019) Week 10: Sorting Algorithms Part 2, Galway-Mayo Institute of Technology
+2. P.Mannion (2019) Week 9: Sorting Algorithms Part 2, Galway-Mayo Institute of Technology
 3. Karuna Sehgal. 2019. An Introduction to Bubble Sort – Karuna Sehgal – Medium. [ONLINE] Available at: https://medium.com/karuna-sehgal/an-introduction-to-bubble-sort-d85273acfcd8. [Accessed 2 May 2019].
 4. Wikipedians & Creutzburg, Reiner & Knackmuß, Jenny. (2013). Lecture Notes - Algorithms and Data Structures - Part 4: Searching and Sorting. 10.13140/2.1.5158.0486.  [ONLINE] Available at:https://www.researchgate.net/publication/259398088_Lecture_Notes_-_Algorithms_and_Data_Structures_-_Part_4_Searching_and_Sorting/citation/download. [Accessed 2 May 2019].
 5. What are the advantages and disadvantages to an insertion sort? - Quora. 2019. What are the advantages and disadvantages to an insertion sort? - Quora. [ONLINE] Available at: https://www.quora.com/What-are-the-advantages-and-disadvantages-to-an-insertion-sort. [Accessed 6 May 2019].
 6.  P.Mannion (2019) Week 10: Sorting Algorithms Part 3, Galway-Mayo Institute of Technology
 7. Sorting Algorithms in Software Development | RoBa's World. 2019. Sorting Algorithms in Software Development | RoBa's World. [ONLINE] Available at: https://www.robasworld.com/sorting-algorithms/. [Accessed 11 May 2019].
 8. GeeksforGeeks. 2019. QuickSort - GeeksforGeeks. [ONLINE] Available at: https://www.geeksforgeeks.org/quick-sort/. [Accessed 11 May 2019].
+9. Meet Zaveri. 2019. An intro to Algorithms: Searching and Sorting algorithms. [ONLINE] Available at: https://codeburst.io/algorithms-i-searching-and-sorting-algorithms-56497dbaef20. [Accessed 11 May 2019].
+10. George Seif. 2019. A tour of the top 5 sorting algorithms with Python code. [ONLINE] Available at: https://medium.com/@george.seif94/a-tour-of-the-top-5-sorting-algorithms-with-python-code-43ea9aa02889. [Accessed 11 May 2019].
+11. P.Mannion (2019) Week 8: Sorting Algorithms Part 1, Galway-Mayo Institute of Technology [11]
+12. Sorting Algorithms in Software Development | RoBa's World. 2019. Sorting Algorithms in Software Development | RoBa's World. [ONLINE] Available at: https://www.robasworld.com/sorting-algorithms/. [Accessed 11 May 2019].
+13. Time Complexity of Algorithms | Studytonight. 2019. Time Complexity of Algorithms | Studytonight. [ONLINE] Available at: https://www.studytonight.com/data-structures/time-complexity-of-algorithms. [Accessed 11 May 2019].
+14. Algorithms Chapter 3 [ONLINE] Available at: https://player.slideplayer.com/32/9926197/#. [Accessed 11 May 2019].
