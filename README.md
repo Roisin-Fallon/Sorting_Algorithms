@@ -15,6 +15,7 @@
     * [Merge Sort](#merge)
 4. [Non-comparative Sorting Algorithms]
     * [Counting Sort](#count)
+ 5. [Implementation and Benchmarking](#imp)
 10. [Conclusion](#con)
 11. [Bibliography](#bib)
     
@@ -68,6 +69,20 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
 
 <i> Hence Bubble sort is not as practical or efficient as other algorithms dealt with in this project and hence is rarely used in the real world. </i>
 
+<details><summary> Bubble Python Code</summary>
+<p>
+   
+      # Code adapted from: https://www.geeksforgeeks.org/bubble-sort/
+      def bubbleSort(alist):              
+          n = len(alist)
+          for i in range(n):                                                   # Traverse through all elements in the array
+              for j in range(0, n-i-1):                                        # Last i elements are already in place
+                  if alist[j] > alist[j+1]:                                    # Swap if the element is greater than the next element
+                      alist[j], alist[j+1] = alist[j+1], alist[j]
+
+</p>
+</details>  
+   
 <a name="in"></a>
 ### Insertion Sort:
 
@@ -102,6 +117,13 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 1. Less efficient on larger data sets as n2 steps required for every n elements to be sorted in the array. 
 2. Worst case O(n2) would be if no numbers in the array (reverse sorted input) are sorted. [5]
 
+<details><summary> Insertion Python Code</summary>
+<p>
+   
+</p>
+</details>
+
+
 <a name="quick"></a>
 ### Quick Sort:
 
@@ -131,6 +153,55 @@ Quicksort is a divide and conquer algorithm which is comparable to merge sort. A
 
 <b> <i> Since the partition method depends on the pivot it can be seen that the value of the pivot will affect the performance of Quick Sort. </i> </b>
 
+<details><summary> Quick Python Code</summary>
+<p>
+   
+       def quickSort(alist):
+         quickSortHelper(alist,0,len(alist)-1)                # recursive function 
+
+      # Sorts the list from indexes first to last 
+      def quickSortHelper(alist,first,last):                  
+         if first<last:                                           
+
+             splitpoint = partition(alist,first,last)       # we call a partition functtion which does most of the work of the quicksort and returns the pivot around which we partition the list 
+
+             quickSortHelper(alist,first,splitpoint-1)      # for all items left of the pivot we will call quicksortHelrper again recursively 
+             quickSortHelper(alist,splitpoint+1,last)        # r all items right of the pivot we will call quicksortHelper again recursively 
+
+
+      def partition(alist,first,last):
+         pivotvalue = alist[first]
+
+         leftmark = first+1
+         rightmark = last
+
+         done = False
+         while not done:
+
+             while leftmark <= rightmark and alist[leftmark] <= pivotvalue:
+                 leftmark = leftmark + 1
+
+             while alist[rightmark] >= pivotvalue and rightmark >= leftmark:
+                 rightmark = rightmark -1
+
+             if rightmark < leftmark:
+                 done = True
+             else:
+                 temp = alist[leftmark]
+                 alist[leftmark] = alist[rightmark]
+                 alist[rightmark] = temp
+
+         temp = alist[first]
+         alist[first] = alist[rightmark]
+         alist[rightmark] = temp
+
+
+         return rightmark
+
+
+</p>
+</details>
+
 <a name="merge"></a>
 ### Merge Sort:
 
@@ -155,6 +226,53 @@ Quicksort is a divide and conquer recursive algorithm.
 <b> Disadvantages: </b>
 
 1. Requires extra memory, proportional to the number in the array O(n). This can slow down sorting of large datasets as it holds the sublists 
+
+<details><summary> Merge Python Code</summary>
+<p>
+ 
+       # Adapted from: https://www.geeksforgeeks.org/merge-sort/
+
+      def mergeSort(alist):
+
+          #print("Splitting ",alist)
+          if len(alist)>1:
+              mid = len(alist)//2                  # Find the middle of the array
+
+              L = alist[:mid]                         # Divide the list elements into 2 halfs: right and left
+              R = alist[mid:]
+
+              mergeSort(L)                            # Sort the left half
+              mergeSort(R)                            # Sort the right half
+
+              i = j = k = 0
+              
+              # Copy data to temp arrays L[] and R[] 
+              
+              while i < len(L) and j < len(R):
+                  if L[i] < R[j]:
+                      alist[k] = L[i]
+                      i+=1
+                  else:
+                      alist[k]=R[j]
+                      j+=1
+                  k+=1
+
+               # Checking if any element was left 
+
+              while i < len(L):                        
+                  alist[k]=L[i]
+                  i+=1
+                  k+=1
+
+               # Checking if any element was right
+
+              while j < len(R):                        
+                  alist[k]=R[j]
+                  j+=1
+                  k+=1
+
+</p>
+</details>
 
 <a name="count"></a>
 ### Counting Sort:
@@ -187,6 +305,32 @@ A number of assumptions are made about the type of input:
 
 1. It can only be implemented on integers, which makes it less applicable then comparative sorting algorithms
 Space complexity <i> O(n +k) </i>
+
+<details><summary> Counting Python Code</summary>
+<p>
+
+      # Adapted from: http://www.learntosolveit.com/python/algorithm_countingsort.html
+
+      def countingSort(array, maxval):
+          """in-place counting sort"""
+          n = len(array)
+          m = maxval + 1
+          count = [0] * m                                 # init with zeros
+          for a in array:
+              count[a] += 1                               # count occurences
+          i = 0
+          for a in range(m):                              # emit
+              for c in range(count[a]):                   # - emit 'count[a]' copies of 'a'
+                  array[i] = a
+                  i += 1
+          return array
+
+</p>
+</details>
+
+<a name="imp"></a>
+## Implementation and Benchmarking:
+
 
 
 References:
