@@ -48,6 +48,22 @@ Sorting is a technique of arranging and rearranging a collection of items to som
  <a name="sp"></a>
 ### Space Complexity:
  
+- Space Complexity is a function describing the total space used by the algorithm to compete its execution in terms of input size and auxiliary space. 
+
+<p align="center">
+   <b> <i> Space Complexity = Auxiliary Space + Input Size </i> </b> </p>
+   
+- Auxiliary space refers to the extra or temporary space that is required by the algorithm during its execution. 
+- An algorithm requires space during execution for the following for 3 reasons:
+
+  - Instruction Space refers to the the amount of memory used to save the compiled version of instructions. The space is fixed but varies depending on the number of lines of code in the program.  
+   - Environmental Stack- At times an algorithm(function) may be called inside another algorithm(function). If this occurs, the current variables are pushed onto the system stack, where they wait for further execution and then the call to the inside algorithm (function) is made. Essentially it is the space needed to store the environment information to resume the suspended function.    
+    - Data Space - is the amount of space needed to store all the variables and constants values. 
+
+Note while calculating Space Complexity of an algorithm normally Data Space is used while the others (Instruction Space and Environmental Stack) are ignored. [15]
+
+ 
+ 
  <a name="time"></a>
 ### Time Complexity:
  
@@ -55,7 +71,7 @@ Sorting is a technique of arranging and rearranging a collection of items to som
 
 <b> Asymptotic Notations </b>
 
-Asymptotic Notations are languages that allow us to analyze an algorithm’s running time by identifying its behavior as the input size for the algorithm increases. This is also known as an algorithm’s growth rate. [9]
+Asymptotic Notations are languages that allow us to analyze an algorithm’s running time by identifying its behavior as the input size for the algorithm increases. This is also known as an algorithm’s growth rate [9].
 
 The 3 asymptotic notations that will be discussed in terms of time complexity:
 
@@ -72,13 +88,13 @@ Omega represents the minimum amount of resources in terms of space and time that
 Theta represents the functions that lie in both O  and Ω expression. It describes the complexity of an algorithm in the average case. It is usually much more difficult to determine the average case time complexity of an algorithm. It represents the average number of operations an algorithm uses to solve a problem over all inputs of a particular size [14].
 [13]
 
-There is a strong correlation between run time of a sorting algorithm and the number of inversions in the input array, where the inversion number relates to one measure of how far it is from being sorted. [11]
+There is a strong correlation between run time of a sorting algorithm and the number of inversions in the input array, where the inversion number relates to one measure of how far it is from being sorted [11].
 
 The different sorting algorithms are a perfect showcase of how algorithm design can have such a strong effect on program complexity, speed, and efficiency [10].
 
 <b> There are 4 desirable properties for a sorting algorithm: </b>
 
-1. Stable sorting algorithms retains the relative order of elements with equal keys. (Image 1). Using an unstable sorting algorithm changes the relative order of elements with equal keys (Image 2). [12]
+1. Stable sorting algorithms retains the relative order of elements with equal keys. Using an unstable sorting algorithm changes the relative order of elements with equal keys [12].
 
 Stable Sort              |  Unstable sort
 :-------------------------:|:-------------------------:
@@ -88,7 +104,7 @@ Stable Sort              |  Unstable sort
 3. Run time efficiency (Best, Average and Worst case)
 4. Suitability – properties of sorting algorithm are well matched to the class of input instances which are expected (determine the advantages and disadvantages of each algorithm when choosing them). 
 
- 
+
 <a name="bub"></a>
 ### Bubble Sort:
 
@@ -100,8 +116,8 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
 
 <b> Bubble Sort Procedure: </b>
 <i>
-* Compares the first 2 elements in the array, it swaps the numbers if they are out of order and repeats this process  for each adjacent elements to the end of the array. It then starts back at the first 2 elements in the array until no swaps occur in the last pass [4]
-* Repeatedly compares each element (except the final one) with the neighbour to the right,. It swaps the numbers if they are out of order. This number is placed at the end s now fixed in place. This process is repeated until there are no more swaps required
+- Compares the first 2 elements in the array, it swaps the numbers if they are out of order and repeats this process  for each adjacent elements to the end of the array. It then starts back at the first 2 elements in the array until no swaps occur in the last pass [4]
+- Repeatedly compares each element (except the final one) with the neighbour to the right,. It swaps the numbers if they are out of order. This number is placed at the end s now fixed in place. This process is repeated until there are no more swaps required
 </i>
 
 <b> Advantages: </b>
@@ -400,3 +416,4 @@ Space complexity <i> O(n +k) </i>
 12. Sorting Algorithms in Software Development | RoBa's World. 2019. Sorting Algorithms in Software Development | RoBa's World. [ONLINE] Available at: https://www.robasworld.com/sorting-algorithms/. [Accessed 11 May 2019].
 13. Time Complexity of Algorithms | Studytonight. 2019. Time Complexity of Algorithms | Studytonight. [ONLINE] Available at: https://www.studytonight.com/data-structures/time-complexity-of-algorithms. [Accessed 11 May 2019].
 14. Algorithms Chapter 3 [ONLINE] Available at: https://player.slideplayer.com/32/9926197/#. [Accessed 11 May 2019].
+15. Space Complexity of Algorithms | Studytonight. 2019. Space Complexity of Algorithms | Studytonight. [ONLINE] Available at: https://www.studytonight.com/data-structures/space-complexity-of-algorithms. [Accessed 04 May 2019].
