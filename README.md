@@ -141,7 +141,7 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
 <details><summary> Bubble Python Code</summary>
 <p>
    
-      # Code adapted from: https://www.geeksforgeeks.org/bubble-sort/
+      # Adapted from: https://www.geeksforgeeks.org/bubble-sort/
       def bubbleSort(alist):              
           n = len(alist)
           for i in range(n):                                                   # Traverse through all elements in the array
@@ -189,6 +189,19 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 <details><summary> Insertion Python Code</summary>
 <p>
    
+      # Adapted from: https://www.geeksforgeeks.org/python-program-for-insertion-sort/
+
+      def insertionSort(alist):                                   # Function to do insertion sort
+           for i in range(1,len(alist)):                          # Start for loop at second element (index 1), assume the first element is sorted
+              key=alist[i]                                        # Next element inserted into sorted section of array
+              position = i -1                                     # Last element we are going to compare with
+
+      # Comparing the current element with the sorted position and swapping 
+              while position>=0 and key < alist[position]:        # Move the key as long as it is less than the previous item in the array
+                  alist[position +1]=alist[position]              # Move the last element compared on step above to make room for key
+                  position -= 1                                   # The next item to compare
+              alist[position+1]=key                               
+              
 </p>
 </details>
 
@@ -224,7 +237,9 @@ Quicksort is a divide and conquer algorithm which is comparable to merge sort. A
 
 <details><summary> Quick Python Code</summary>
 <p>
-   
+ 
+      # Adapted from: https://www.pythoncentral.io/quick-sort-implementation-guide/
+
        def quickSort(alist):
          quickSortHelper(alist,0,len(alist)-1)                # recursive function 
 
