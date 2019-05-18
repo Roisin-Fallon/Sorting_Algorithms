@@ -431,6 +431,36 @@ Benchmarking also known as posteriori analysis which evaluates efficiency empiri
 Hence it is recommended that multiple runs are performed using same experimental setup to establish an average expected performance. 
 Benchmarking can be used to verify the priori analysis (theory) of algorithms [16].
 
+To benchmark the algorithms I used 15 input sizes and used 3 separate random arrays ranges. 
+
+*	Range 0 – 20000
+*	Range 0 – 50000
+*	Range 0 – 100000
+
+
+<details><summary>Random Array Code Sample</summary>
+<p>
+ 
+      def random_array(n):                     # Function takes as input a value n 
+          array = []                           # create an array variable
+          for i in range(0, n, 1):             # i start at 0 stop at n an increment by 1 (e.g. if n=4 0,1,2,3)
+              array.append(randint(0,100))     # Add random generated integers with values between 0 and 99 to the array
+          return array
+               
+</p>
+</details>
+
+<details><summary></summary>
+<p>
+ 
+      import time                                         # import time module
+
+      num_runs = 10                                       # Number of times to test the function i.e. we want 10 runs
+      results = []                                        # array to store results for each test
+      countsort_avglist = [] 
+
+</p>
+</details>
 
 <a name="con"></a>
 ## Conclusion:
