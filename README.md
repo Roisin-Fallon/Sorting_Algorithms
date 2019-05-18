@@ -298,6 +298,7 @@ Quicksort is a divide and conquer recursive algorithm.
 </p>
 
 <i>
+   
 * If only one element is in the array it is already sorted and return
 * Splits an unsorted list recursively in half into n sublists, each comprising of a singular elements (list of 1 element is supposed sorted) 
 * Merge sublists two at a time to give a new sorted sublist until it includes all elements now in a single sorted array. [6]
@@ -419,12 +420,13 @@ Space complexity <i> O(n +k) </i>
 ## Implementation and Benchmarking:
 
 Benchmarking also known as posteriori analysis which evaluates efficiency empirically (using experiments). The relative performance is analyzed by comparing  the actual measurements that has been collected during experiment for the algorithms implemented. It is a measure of the real world performance of your algorithm but is affected by various hardware and software factors which include:
-         * System architecture
-         * CPU design
-         * Choice of Operating System 
-         * Background processes
-         * Energy saving 
-         * Performance enhancing technologies
+
+  * System architecture
+  * CPU design
+  * Choice of Operating System 
+  * Background processes
+  * Energy saving 
+  * Performance enhancing technologies
 
 Hence it is recommended that multiple runs are performed using same experimental setup to establish an average expected performance. 
 Benchmarking can be used to verify the priori analysis (theory) of algorithms [16].
