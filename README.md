@@ -164,6 +164,7 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 <b> Insertion Sort Procedure: </b>
 
 <i>
+   
 * Set “key” as the element at index 1 (left of the array). Move any elements  to the left that are > the “key” right by one position, and insert the “key”. 
    
 * Set “key” as the element at index 2 (left of the array). Move any elements  to the left that are > the “key” right by one position, and insert the “key”. 
@@ -171,6 +172,7 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 * …..
 
 * Set “key” as the element at index n-1. Move any elements  to the left that are > the “key” right by one position, and insert the “key”. [2]
+</i> 
 
 <b> Advantages: </b>
 
