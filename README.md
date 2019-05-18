@@ -373,13 +373,14 @@ A number of assumptions are made about the type of input:
 <p align="center">
    <img src="https://camo.githubusercontent.com/02f9a6cfab70c3bdc81dda16112638071b688710/68747470733a2f2f312e62702e626c6f6773706f742e636f6d2f2d785071796c6e67714153592f574c47713370396e3976492f414141414141414141484d2f4a48647458416b4a593877597a444d4258787161726a6d687050684d3075384d41434c63422f73313630302f526573756c74417272617943532e676966"> 
 </p>
-
+<i>
+   
 1. Establish the key range  k in the input array (if currently unknown)
 2. Initialise an array count of size k ,which will be used to count the number of times that each key value appears in the input instance.
 3. Initialise an array result of size n, which will be used to store the sorted output.
 4. Iterate through the input array, and record the number of times each distinct key values occurs in the input instance.
 5. Construct the sorted result array, based on the histogram of key frequencies stored in count. Refer to the ordering of keys in input to ensure that stability is preserved.
-
+</i>
 <b> Advantages: </b>
 
 1. Counting sort is stable (if implemented in the correct manner)
@@ -418,12 +419,13 @@ Space complexity <i> O(n +k) </i>
 ## Implementation and Benchmarking:
 
 Benchmarking also known as posteriori analysis which evaluates efficiency empirically (using experiments). The relative performance is analyzed by comparing  the actual measurements that has been collected during experiment for the algorithms implemented. It is a measure of the real world performance of your algorithm but is affected by various hardware and software factors which include:
-   * System architecture
-   * CPU design
-   * Choice of Operating System 
-   * Background processes
-   * Energy saving 
-   * Performance enhancing technologies
+         * System architecture
+         * CPU design
+         * Choice of Operating System 
+         * Background processes
+         * Energy saving 
+         * Performance enhancing technologies
+
 Hence it is recommended that multiple runs are performed using same experimental setup to establish an average expected performance. 
 Benchmarking can be used to verify the priori analysis (theory) of algorithms [16].
 
