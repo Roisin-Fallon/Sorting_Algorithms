@@ -415,6 +415,17 @@ Space complexity <i> O(n +k) </i>
 <a name="imp"></a>
 ## Implementation and Benchmarking:
 
+Benchmarking also known as posteriori analysis which evaluates efficiency empirically (using experiments). The relative performance is analyzed by comparing  the actual measurements that has been collected during experiment for the algorithms implemented. It is a measure of the real world performance of your algorithm but is affected by various hardware and software factors which include:
+   * System architecture
+   * CPU design
+   * Choice of Operating System 
+   * Background processes
+   * Energy saving 
+   * Performance enhancing technologies
+Hence it is recommended that multiple runs are performed using same experimental setup to establish an average expected performance. 
+Benchmarking can be used to verify the priori analysis (theory) of algorithms [16].
+
+
 <a name="con"></a>
 ## Conclusion:
 ![Algorithm Sorting Property Summary](https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/summary.png)
@@ -439,3 +450,4 @@ Space complexity <i> O(n +k) </i>
 13. Time Complexity of Algorithms | Studytonight. 2019. Time Complexity of Algorithms | Studytonight. [ONLINE] Available at: https://www.studytonight.com/data-structures/time-complexity-of-algorithms. [Accessed 11 May 2019].
 14. Algorithms Chapter 3 [ONLINE] Available at: https://player.slideplayer.com/32/9926197/#. [Accessed 11 May 2019].
 15. Space Complexity of Algorithms | Studytonight. 2019. Space Complexity of Algorithms | Studytonight. [ONLINE] Available at: https://www.studytonight.com/data-structures/space-complexity-of-algorithms. [Accessed 04 May 2019].
+16. P.Mannion (2019) Week 12: Benchmarking Algorithms in Python, Galway-Mayo Institute of Technology
