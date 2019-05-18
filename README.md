@@ -104,6 +104,13 @@ Stable Sort              |  Unstable sort
 3. Run time efficiency (Best, Average and Worst case)
 4. Suitability – properties of sorting algorithm are well matched to the class of input instances which are expected (determine the advantages and disadvantages of each algorithm when choosing them). 
 
+Comaprasion Sort:
+
+Within the comparasion sorting algorithms it can be further classified into:
+   * Simple Comparasion Sorting Algorithms - Bubble Sort, Selection Sort and Insertion Sort
+   * Efiiceint Comparasion Sorting Algorithms - Merge Sort, Quicksort
+  
+  
 
 <a name="bub"></a>
 ### Bubble Sort:
