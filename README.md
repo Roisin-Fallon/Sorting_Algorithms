@@ -42,7 +42,7 @@ Sorting is a technique of arranging and rearranging a collection of items to som
 ### Sorting Algorithm Timeline:
 
  <p align="center">
-   <img src="              " title="Sorting Algorithm timeline" > 
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Timeline.PNG" title="Sorting Algorithm timeline" > 
  </p>
  
  <a name="sp"></a>
