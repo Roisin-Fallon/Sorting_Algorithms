@@ -9,7 +9,7 @@
     * [ Sorting Algorithm Timeline](#his)
     * [Space Complexity](#sp)
     * [Time Complexity](#time)
-2. [Simple Comparative Sorting Algorithms]
+2. [Simple Comparative Sorting Algorithms] (#par)
     * [Bubble Sort](#bub)
     * [Insertion Sort](#in)
 3. [Efficient Comparative Sorting Algorithms]
@@ -104,12 +104,15 @@ Stable Sort              |  Unstable sort
 3. Run time efficiency (Best, Average and Worst case)
 4. Suitability – properties of sorting algorithm are well matched to the class of input instances which are expected (determine the advantages and disadvantages of each algorithm when choosing them). 
 
+
+<a name="par"></a>
 Comaprasion Sort:
+
+Comparison Sorting Algorithm characterizes data using comparison operations only to determine which of  the two elements will appear first in a sorted list. Comparison sort make no assumptions and compares every element in the array with each other. Comparison sorts are widely applicable to diverse types of data input however no algorithm that sorts by comparison can do better than <i> nlogn </i> in the average or worst case. [11]
 
 Within the comparasion sorting algorithms it can be further classified into:
    * Simple Comparasion Sorting Algorithms - Bubble Sort, Selection Sort and Insertion Sort
    * Efiiceint Comparasion Sorting Algorithms - Merge Sort, Quicksort
-  
   
 
 <a name="bub"></a>
