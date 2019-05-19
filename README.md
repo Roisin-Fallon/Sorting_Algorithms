@@ -9,13 +9,13 @@
     * [ Sorting Algorithm Timeline](#his)
     * [Space Complexity](#sp)
     * [Time Complexity](#time)
-2. [Simple Comparative Sorting Algorithms] (#par)
+2. [Simple Comparative Sorting Algorithms](#par)
     * [Bubble Sort](#bub)
     * [Insertion Sort](#in)
 3. [Efficient Comparative Sorting Algorithms]
     * [Quick Sort](#quick)
     * [Merge Sort](#merge)
-4. [Non-comparative Sorting Algorithms]
+4. [Non-comparative Sorting Algorithms](non)
     * [Counting Sort](#count)
  5. [Implementation and Benchmarking](#imp)
 10. [Conclusion](#con)
@@ -106,13 +106,22 @@ Stable Sort              |  Unstable sort
 
 
 <a name="par"></a>
-Comaprasion Sort:
+### Comaprasion Sort:
 
 Comparison Sorting Algorithm characterizes data using comparison operations only to determine which of  the two elements will appear first in a sorted list. Comparison sort make no assumptions and compares every element in the array with each other. Comparison sorts are widely applicable to diverse types of data input however no algorithm that sorts by comparison can do better than <i> nlogn </i> in the average or worst case. [11]
 
 Within the comparasion sorting algorithms it can be further classified into:
-   * Simple Comparasion Sorting Algorithms - Bubble Sort, Selection Sort and Insertion Sort
-   * Efiiceint Comparasion Sorting Algorithms - Merge Sort, Quicksort
+   * Simple Comparasion Sorting Algorithms 
+   
+        * Bubble Sort
+        * Selection Sort 
+        * Insertion Sort
+        
+   * Efiiceint Comparasion Sorting Algorithms 
+   
+      * Merge Sort
+      * Quicksort
+      * Heap Sort
   
 
 <a name="bub"></a>
@@ -354,6 +363,15 @@ Quicksort is a divide and conquer recursive algorithm.
                   j+=1
                   k+=1
 
+<a name="non"></a>
+## Non - Comparasion Sorting Algorithms:
+
+Non-comparison sorts can be distinguished from comparison sorts as they make assumptions about data which eliminates the need to compare elements against each other (if we know data falls into a certain range). By making such assumptions it is possible to have a minimum sorting time of <i>O(n) </i> as elements must be examined at least once. 
+Non-comparison sorts:
+
+   * Counting Sort,
+   * Bucket Sort 
+   * Radix Sort
 
 
 <a name="count"></a>
