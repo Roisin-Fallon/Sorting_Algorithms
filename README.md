@@ -429,6 +429,7 @@ To benchmark the algorithms I used 15 input sizes and used 3 separate random arr
 *	Range 0 – 100000
 
 
+
   
  <b><i> Generate Array with random numbers using randint from Pythons random library</b></i>
   
@@ -466,6 +467,17 @@ Please note the above code refers to one of the 3 arrays created, the code for t
 <p align="center">
    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ark_FZG1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1omv0tmikzeaj24z8ps2.jpeg"> 
 </p>
+
+In terms of time complexity it is clear from the graph above that Bubble sort is the slowest of the algorithms that were selected in this project. This is in keeping with the expectation from the table above as the average case is <i> n2 </i>, where n refers to the number of items to sort. As stated earlier the simplicity of this algorithm makes it ideal as a teaching tool, however it is not a realistic for it to be used in real life. 
+ 
+Insertion Sort performs significantly better than Bubble sort but significantly worse than the remaining algorithms. This is in keeping with the theory that insertion sort performs better than its simple sort counterparts (Bubble Sort and Insertion Sort). However, the time efficiency is inferior to the efficient comparison based sorting algorithms (Merge Sort and Quicksort). Hence, in the second graph when the input size was increased to 50000 insertion sort can easily be separated. It is important to be aware that insertion sort can be useful in certain circumstances e.g. when they are a small number of items or when the items are mostly sorted. 
+
+In the third and final graph input size is increased to 100000. Please note I omitted both bubble and insertion sort from this graph which allowed a clearer view of the difference between the efficient comparison based sorting algorithms and the non-comparison based sorting algorithm (counting sort). Both merge and insertion sort employ a divide and conquer approach with merge sort performing the better of the two. This matches the expectation that as the input size increases merge sort is the superior algorithm. Interestingly from the above table, in the worst case (Big O) scenario Quick Sort is <i> n2 </i>  and Merge Sort  is <i> n log n </i>. Merge Sort is an excellent choice if predictable runtime is important as its best, worst and average time complexity is <i> O (n log n) </i>. 
+
+Finally counting sort performed the best of the five algorithms selected for this project with a potential runtime of <i> n+k  </i>  in the best, worst and average case, (where n refers to the input size and  each item has a non-negative integer key,  with a range of k). However it is important to be aware that this is not as widely as applicable as comparison sorts.  
+
+In completing this project it is clear that no single algorithm can be isolated as the best in all instances when sorting input data as it can be affected by a number of factors e.g. input size, level of sorting etc.
+Hence the advantages and disadvantages of each algorithm (as outlined in this project) should be weighed up before making your selection. 
 
 <a name="bib"></a>
 ## Bibliography:
