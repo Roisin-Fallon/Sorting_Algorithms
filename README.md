@@ -12,7 +12,7 @@
 2. [Simple Comparative Sorting Algorithms](#par)
     * [Bubble Sort](#bub)
     * [Insertion Sort](#in)
-3. [Efficient Comparative Sorting Algorithms]
+3. [Efficient Comparative Sorting Algorithms](#x)
     * [Quick Sort](#quick)
     * [Merge Sort](#merge)
 4. [Non-comparative Sorting Algorithms](non)
@@ -213,7 +213,8 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
                   alist[position +1]=alist[position]              # Move the last element compared on step above to make room for key
                   position -= 1                                   # The next item to compare
               alist[position+1]=key              
-
+   
+<a name="x"></a>
 <a name="quick"></a>
 ### Quick Sort:
 
@@ -449,8 +450,6 @@ To benchmark the algorithms I used 15 input sizes and used 3 separate random arr
 *	Range 0 – 50000
 *	Range 0 – 100000
 
-
-
   
  <b><i> Generate Array with random numbers using randint from Pythons random library</b></i>
   
@@ -481,16 +480,198 @@ To benchmark the algorithms I used 15 input sizes and used 3 separate random arr
 
 Please note the above code refers to one of the 3 arrays created for this project.
 
+<b><i> Average of 10 runs</b></i>
+ 
+      import time                                         # import time module
 
-Putting this all together please click on the algorithm to view the code:
+      num_runs = 10                                       # Number of times to test the function i.e. we want 10 runs
+      results = []                                        # array to store results for each test
+      countsort_avglist = [] 
+
+<b><i>Benchmark</b></i>
+
+      def benchmark_countingsort():
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist1,100)                    # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist2,250)                    # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist4,500)                    # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist4,750)                    # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist5,1000)                   # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist6,1250)                   # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist7,2500)                   # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist8,3750)                   # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist9,5000)                   # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist10,6250)                 # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist11,7500)                  # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist12,8750)                  # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist13,10000)                 # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist14,15000)                 # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          for r in range(num_runs):                       # Benchmark the function
+              start_time = time.time()                    # Log the start time in seconds
+              countingSort(alist15,20000)                 # Call the function insertion to benchmark
+              end_time = time.time()                      # Log the end time in seconds
+              time_elapsed= end_time - start_time         # Calculate the elapsed time 
+              results.append(time_elapsed)
+
+          b = sum(results)                                # Sum the results of the 10 runs
+          average = (b/num_runs)                          # Calculate the average of a run
+          countsort_avglist.append(average)
+
+          print(countsort_avglist)
+
+      benchmark_countingsort()
+      
+### Python Code to generate graphs: 
+
+The code that was run to generate the tables below can be found by clicking on the algorithms again I have divided them into the ranges. 
 
 * Random input array generated in range 0 - 20000
 
- *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/bubble.py> Bubble Sort </a>
-   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/insertion.py> Insertion Sort </a>
-   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/merge.py>Merge Sort </a>
-   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/quick.py> Quick Sort </a>
-   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/counting.py> Counting Sort </a>
+    *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/bubble.py> Bubble Sort </a>
+    *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/insertion.py> Insertion Sort </a>
+    * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/merge.py>Merge Sort </a>
+    * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/quick.py> Quick Sort </a>
+    *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/counting.py> Counting Sort </a>
    
 * Random input array generated in range 0 - 50000
 
