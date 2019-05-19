@@ -138,8 +138,7 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
 
 <i> Hence Bubble sort is not as practical or efficient as other algorithms dealt with in this project and hence is rarely used in the real world. </i>
 
-<details><summary> Bubble Python Code</summary>
-<p>
+
    
       # Adapted from: https://www.geeksforgeeks.org/bubble-sort/
       def bubbleSort(alist):              
@@ -149,8 +148,7 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
                   if alist[j] > alist[j+1]:                                    # Swap if the element is greater than the next element
                       alist[j], alist[j+1] = alist[j+1], alist[j]
 
-</p>
-</details>  
+
    
 <a name="in"></a>
 ### Insertion Sort:
@@ -188,8 +186,7 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 1. Less efficient on larger data sets as n2 steps required for every n elements to be sorted in the array. 
 2. Worst case O(n2) would be if no numbers in the array (reverse sorted input) are sorted. [5]
 
-<details><summary> Insertion Python Code</summary>
-<p>
+
    
       # Adapted from: https://www.geeksforgeeks.org/python-program-for-insertion-sort/
 
@@ -204,8 +201,7 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
                   position -= 1                                   # The next item to compare
               alist[position+1]=key                               
               
-</p>
-</details>
+
 
 
 <a name="quick"></a>
@@ -237,8 +233,7 @@ Quicksort is a divide and conquer algorithm which is comparable to merge sort. A
 
 <b> <i> Since the partition method depends on the pivot it can be seen that the value of the pivot will affect the performance of Quick Sort. </i> </b>
 
-<details><summary> Quick Python Code</summary>
-<p>
+
  
       # Adapted from: https://www.pythoncentral.io/quick-sort-implementation-guide/
 
@@ -285,8 +280,7 @@ Quicksort is a divide and conquer algorithm which is comparable to merge sort. A
          return rightmark
 
 
-</p>
-</details>
+
 
 <a name="merge"></a>
 ### Merge Sort:
@@ -314,8 +308,6 @@ Quicksort is a divide and conquer recursive algorithm.
 
 1. Requires extra memory, proportional to the number in the array O(n). This can slow down sorting of large datasets as it holds the sublists 
 
-<details><summary> Merge Python Code</summary>
-<p>
  
        # Adapted from: https://www.geeksforgeeks.org/merge-sort/
 
@@ -358,8 +350,7 @@ Quicksort is a divide and conquer recursive algorithm.
                   j+=1
                   k+=1
 
-</p>
-</details>
+
 
 <a name="count"></a>
 ### Counting Sort:
@@ -394,8 +385,7 @@ A number of assumptions are made about the type of input:
 1. It can only be implemented on integers, which makes it less applicable then comparative sorting algorithms
 Space complexity <i> O(n +k) </i>
 
-<details><summary> Counting Python Code</summary>
-<p>
+<h4> Counting Sort Code 
 
       # Adapted from: http://www.learntosolveit.com/python/algorithm_countingsort.html
 
@@ -413,8 +403,7 @@ Space complexity <i> O(n +k) </i>
                   i += 1
           return array
 
-</p>
-</details>
+
 
 <a name="imp"></a>
 ## Implementation and Benchmarking:
@@ -438,29 +427,40 @@ To benchmark the algorithms I used 15 input sizes and used 3 separate random arr
 *	Range 0 – 100000
 
 
-<details><summary>Random Array Code Sample</summary>
-<p>
- 
+  
+ <b><i> Generate Array with random numbers using randint from Pythons random library</b></i>
+  
+      from random import *                     # Import python random module
+
       def random_array(n):                     # Function takes as input a value n 
           array = []                           # create an array variable
           for i in range(0, n, 1):             # i start at 0 stop at n an increment by 1 (e.g. if n=4 0,1,2,3)
               array.append(randint(0,100))     # Add random generated integers with values between 0 and 99 to the array
           return array
-               
-</p>
-</details>
 
-<details><summary></summary>
-<p>
- 
-      import time                                         # import time module
+      # Assign random array to alist
+      alist1= random_array(100)
+      alist2= random_array(250)
+      alist3= random_array(500)
+      alist4 = random_array(750)
+      alist5 = random_array(1000)
+      alist6 = random_array(1250)
+      alist7 = random_array(2500)
+      alist8 = random_array(3750)
+      alist9 = random_array(5000)
+      alist10 = random_array(6250)
+      alist11 = random_array(7500)
+      alist12 = random_array(8750)
+      alist13 = random_array(10000)
+      alist14 = random_array(15000)
+      alist15 = random_array(20000)
 
-      num_runs = 10                                       # Number of times to test the function i.e. we want 10 runs
-      results = []                                        # array to store results for each test
-      countsort_avglist = [] 
+Please note the above code refers to one of the 3 arrays created, the code for the other arrays are included in the code section of this project.  
 
-</p>
-</details>
+
+
+
+
 
 <a name="con"></a>
 ## Conclusion:
