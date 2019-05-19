@@ -488,10 +488,37 @@ Please note the above code refers to one of the 3 arrays created, the code for t
 <p align="center">
    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ark_FZG1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/1omv0tmikzeaj24z8ps2.jpeg"> 
 </p>
+ <p align="center">
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Tables/Table1.PNG" title="Table for range 0 - 20000" > 
+ </p>
+ 
+ <p align="center">
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Graph/Graph1.PNG" title="Graphical representation of sorting algorithms: input range 0 - 20000" > 
+ </p>
+ 
+
 
 In terms of time complexity it is clear from the graph above that Bubble sort is the slowest of the algorithms that were selected in this project. This is in keeping with the expectation from the table above as the average case is <i> n2 </i>, where n refers to the number of items to sort. As stated earlier the simplicity of this algorithm makes it ideal as a teaching tool, however it is not a realistic for it to be used in real life. 
+
+ <p align="center">
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Tables/Table2.PNG" title="Sorting Algorithm timeline" > 
+ </p>
+ 
+  
+ <p align="center">
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Graph/Graph2.PNG" title="Graphical representation of sortig algorithms: input range 0 - 50000" > 
+ </p>
+  
  
 Insertion Sort performs significantly better than Bubble sort but significantly worse than the remaining algorithms. This is in keeping with the theory that insertion sort performs better than its simple sort counterparts (Bubble Sort and Insertion Sort). However, the time efficiency is inferior to the efficient comparison based sorting algorithms (Merge Sort and Quicksort). Hence, in the second graph when the input size was increased to 50000 insertion sort can easily be separated. It is important to be aware that insertion sort can be useful in certain circumstances e.g. when they are a small number of items or when the items are mostly sorted. 
+
+ <p align="center">
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Tables/Table3.PNG" title="Table for range 0 - 100000" > 
+ </p>
+  
+ <p align="center">
+   <img src="https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Graph/Graph3.PNG" title="Graphical representation of sortig algorithms: input range 0 - 100000" > 
+ </p>
 
 In the third and final graph input size is increased to 100000. Please note I omitted both bubble and insertion sort from this graph which allowed a clearer view of the difference between the efficient comparison based sorting algorithms and the non-comparison based sorting algorithm (counting sort). Both merge and insertion sort employ a divide and conquer approach with merge sort performing the better of the two. This matches the expectation that as the input size increases merge sort is the superior algorithm. Interestingly from the above table, in the worst case (Big O) scenario Quick Sort is <i> n2 </i>  and Merge Sort  is <i> n log n </i>. Merge Sort is an excellent choice if predictable runtime is important as its best, worst and average time complexity is <i> O (n log n) </i>. 
 
