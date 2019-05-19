@@ -479,7 +479,33 @@ To benchmark the algorithms I used 15 input sizes and used 3 separate random arr
       alist14 = random_array(15000)
       alist15 = random_array(20000)
 
-Please note the above code refers to one of the 3 arrays created, the code for the other arrays are included in this project HERE.  
+Please note the above code refers to one of the 3 arrays created for this project.
+
+
+Putting this all together please click on the algorithm to view the code:
+
+* Random input array generated in range 0 - 20000
+
+ *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/bubble.py> Bubble Sort </a>
+   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/insertion.py> Insertion Sort </a>
+   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/merge.py>Merge Sort </a>
+   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/quick.py> Quick Sort </a>
+   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2020000/counting.py> Counting Sort </a>
+   
+* Random input array generated in range 0 - 50000
+
+   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2050000/insert.py> Insertion Sort </a>
+   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2050000/merge.py>Merge Sort </a>
+   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2050000/quick.py> Quick Sort </a>
+   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%2050000/counting.py> Counting Sort </a>
+   
+
+* Random input array generated in range 0 - 100000
+
+   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%20100000/merge.py>Merge Sort </a>
+   * <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%20100000/quick.py> Quick Sort </a>
+   *  <a href=https://github.com/Roisin-Fallon/Sorting_Algorithms/blob/master/Python%20Code/Algorithm%20Range%200%20-%20100000/counting.py> Counting Sort </a>
+   
 
 
 <a name="con"></a>
