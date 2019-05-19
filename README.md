@@ -138,7 +138,7 @@ Bubble sort is the simplest sorting algorithm. It gets its name from the way lar
 
 <i> Hence Bubble sort is not as practical or efficient as other algorithms dealt with in this project and hence is rarely used in the real world. </i>
 
-
+<h4><i> Bubble Sort Python Code</i></h4>
    
       # Adapted from: https://www.geeksforgeeks.org/bubble-sort/
       def bubbleSort(alist):              
@@ -186,8 +186,9 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
 1. Less efficient on larger data sets as n2 steps required for every n elements to be sorted in the array. 
 2. Worst case O(n2) would be if no numbers in the array (reverse sorted input) are sorted. [5]
 
+<
+<h4><i>Insertion Sort Python Code </i></h4>
 
-   
       # Adapted from: https://www.geeksforgeeks.org/python-program-for-insertion-sort/
 
       def insertionSort(alist):                                   # Function to do insertion sort
@@ -199,10 +200,7 @@ Insertion sort is a comparison based sorting algorithm which is  faster than its
               while position>=0 and key < alist[position]:        # Move the key as long as it is less than the previous item in the array
                   alist[position +1]=alist[position]              # Move the last element compared on step above to make room for key
                   position -= 1                                   # The next item to compare
-              alist[position+1]=key                               
-              
-
-
+              alist[position+1]=key              
 
 <a name="quick"></a>
 ### Quick Sort:
@@ -234,6 +232,7 @@ Quicksort is a divide and conquer algorithm which is comparable to merge sort. A
 <b> <i> Since the partition method depends on the pivot it can be seen that the value of the pivot will affect the performance of Quick Sort. </i> </b>
 
 
+<h4><i> Quicksort Python Code </i></h4>
  
       # Adapted from: https://www.pythoncentral.io/quick-sort-implementation-guide/
 
@@ -308,7 +307,9 @@ Quicksort is a divide and conquer recursive algorithm.
 
 1. Requires extra memory, proportional to the number in the array O(n). This can slow down sorting of large datasets as it holds the sublists 
 
- 
+
+<h4><i> Merge Sort Python Code</i></h4> 
+
        # Adapted from: https://www.geeksforgeeks.org/merge-sort/
 
       def mergeSort(alist):
@@ -385,7 +386,8 @@ A number of assumptions are made about the type of input:
 1. It can only be implemented on integers, which makes it less applicable then comparative sorting algorithms
 Space complexity <i> O(n +k) </i>
 
-<h4> Counting Sort Code 
+
+<h4><i>Counting Sort Python Code </i></h4>
 
       # Adapted from: http://www.learntosolveit.com/python/algorithm_countingsort.html
 
@@ -455,11 +457,7 @@ To benchmark the algorithms I used 15 input sizes and used 3 separate random arr
       alist14 = random_array(15000)
       alist15 = random_array(20000)
 
-Please note the above code refers to one of the 3 arrays created, the code for the other arrays are included in the code section of this project.  
-
-
-
-
+Please note the above code refers to one of the 3 arrays created, the code for the other arrays are included in this project HERE.  
 
 
 <a name="con"></a>
